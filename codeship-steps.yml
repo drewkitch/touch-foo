@@ -1,0 +1,10 @@
+- name: randomly touch foo.txt, invalidating image layer cache
+  type: serial
+  steps:
+    
+    - name: touch foo?
+      command: ./touch-foo.sh
+      service: service-a
+    - name: build service b
+      command: true
+      service: service-b

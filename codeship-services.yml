@@ -1,0 +1,10 @@
+service-a:
+  build:
+    dockerfile: Dockerfile.a
+  volumes:
+    - ./:/app
+
+service-b:
+  build:
+    dockerfile: Dockerfile.b
+  cached: true
