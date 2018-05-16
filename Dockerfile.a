@@ -1,5 +1,5 @@
 FROM ubuntu
 
 WORKDIR /app
-COPY ./modify-foo.sh ./
+COPY ./touch-foo.sh ./
 COPY ./foo.txt ./
